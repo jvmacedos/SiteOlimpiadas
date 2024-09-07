@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Federação Brasileira nas Olimpíadas</title>
+</head>
+<body>
+    <header>
+        <!-- Logo da federação olímpica -->
+        <img src="../src/logo-br.png" alt="Logo da Federação" class="logo" id="logo-brasil">
+        <h1>Federação Brasileira nas Olimpíadas Paris 2024</h1>
+        <!-- Link para esportes das Olimpíadas -->
+        <nav>
+            <ul>
+                <li><a href="#" id="mostrar-esportes" class="btn-esportes">Conheça os esportes praticados nas Olimpíadas de Paris 2024</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Digite o nome do atleta">
+                <button id="search-button">Pesquisar</button>
+            </div>
+            <div id="suggestions"></div>
+        </section>
+        
+        <!-- Exibir a lista de esportes -->
+        <section id="esportes-2024" class="esportes" style="display: none;">
+            <h2>Esportes das Olimpíadas de Paris 2024</h2>
+            <div id="lista-esportes" class="esportes-container">
+                <!-- Cards de esportes serão inseridos aqui-->
+            </div>
+        </section>
+
+        <!-- Modal para exibir detalhes do atleta -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>2024 - Federação Brasileira nas Olimpíadas. Todos os direitos reservados</p>
+        <p>Entre em contato pelo e-mail: contato@federacao.com.br</p>
+    </footer>
+
+    <script defer src="../Back-End/dados.js"></script>
+    <script defer src="../Back-End/script.js"></script>
+</body>
+</html>
